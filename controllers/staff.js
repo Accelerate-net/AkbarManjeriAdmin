@@ -33,7 +33,7 @@ angular.module('StaffApp', ['ngCookies'])
             method  : 'POST',
             url     : 'http://www.akbarmanjeri.in/akbar-apis/fetchagents.php',
             data    : data,
-            headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+            headers : {'Content-Type': 'application/json'}
            })
            .then(function(data) {
               $scope.staffList = data.data.response;
@@ -67,7 +67,7 @@ angular.module('StaffApp', ['ngCookies'])
             method  : 'POST',
             url     : 'http://www.akbarmanjeri.in/akbar-apis/addagent.php',
             data    : data,
-            headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+            headers : {'Content-Type': 'application/json'}
            })
            .then(function(response) {
               
@@ -101,7 +101,7 @@ angular.module('StaffApp', ['ngCookies'])
           method  : 'POST',
           url     : 'http://www.akbarmanjeri.in/akbar-apis/removeagent.php',
           data    : data,
-          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+          headers : {'Content-Type': 'application/json'}
          })
          .then(function(response) {
           $('#confirmationModal').modal('hide');

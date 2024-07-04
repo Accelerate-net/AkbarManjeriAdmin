@@ -25,7 +25,7 @@ angular.module('AdminLoginApp', ['ngCookies'])
           method  : 'POST',
           url     : 'http://www.akbarmanjeri.in/akbar-apis/adminlogin.php',
           data    : data,
-          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+          headers : {'Content-Type': 'application/json'}
          })
          .then(function(response) {
           $scope.token = response.data.response;

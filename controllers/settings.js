@@ -42,7 +42,7 @@ angular.module('SettingsApp', ['ngCookies'])
         method  : 'POST',
         url     : 'http://www.akbarmanjeri.in/akbar-apis/fetchadmininfo.php',
         data    : data,
-        headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+        headers : {'Content-Type': 'application/json'}
        })
        .then(function(response) {
             if(response.data.status){
@@ -92,7 +92,7 @@ angular.module('SettingsApp', ['ngCookies'])
 	        method  : 'POST',
 	        url     : 'http://www.akbarmanjeri.in/akbar-apis/updateadmin.php',
 	        data    : mydata,
-	        headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+	        headers : {'Content-Type': 'application/json'}
 	       })
 	       .then(function(response) {
 	            if(response.data.status){

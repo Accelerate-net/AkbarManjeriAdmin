@@ -77,7 +77,7 @@ angular.module('TokenApp', ['ngCookies'])
               method  : 'POST',
               url     : 'http://www.akbarmanjeri.in/akbar-apis/filtertokens.php',
               data    : data,
-              headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+              headers : {'Content-Type': 'application/json'}
              })
              .then(function(response) {
       	       $('#vegaPanelBodyLoader').hide(); $("body").css("cursor", "default");
@@ -190,7 +190,7 @@ angular.module('TokenApp', ['ngCookies'])
           method  : 'POST',
           url     : 'http://www.akbarmanjeri.in/akbar-apis/filtertokens.php',
           data    : data,
-          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+          headers : {'Content-Type': 'application/json'}
          })
          .then(function(response) {
            $('#vegaPanelBodyLoader').hide(); $("body").css("cursor", "default");
@@ -226,7 +226,7 @@ angular.module('TokenApp', ['ngCookies'])
           method  : 'POST',
           url     : 'http://www.akbarmanjeri.in/akbar-apis/filtertokens.php',
           data    : data,
-          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+          headers : {'Content-Type': 'application/json'}
          })
          .then(function(response) {
            if(response.data.status){
@@ -294,7 +294,7 @@ angular.module('TokenApp', ['ngCookies'])
           method  : 'POST',
           url     : 'http://www.akbarmanjeri.in/akbar-apis/canceltoken.php',
           data    : data,
-          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+          headers : {'Content-Type': 'application/json'}
          })
          .then(function(response) {
             $('#cancelModal').modal('hide');
@@ -359,7 +359,7 @@ angular.module('TokenApp', ['ngCookies'])
         method  : 'POST',
         url     : 'http://www.akbarmanjeri.in/akbar-apis/updatetokenremarks.php',
         data    : data,
-        headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+        headers : {'Content-Type': 'application/json'}
      })
      .then(function(response) {
       $('#tokenEditModal').modal('hide');
@@ -412,7 +412,7 @@ angular.module('TokenApp', ['ngCookies'])
               method  : 'POST',
               url     : 'http://www.akbarmanjeri.in/akbar-apis/newtoken.php',
               data    : data,
-              headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+              headers : {'Content-Type': 'application/json'}
            })
            .then(function(response) {
             $('#tokenModal').modal('hide');
